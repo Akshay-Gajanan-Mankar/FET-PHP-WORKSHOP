@@ -1,0 +1,57 @@
+@mixin div2-navbar($li-float,$background-color-ul,$background-color-hover)
+{
+    ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background-color: $background-color-ul;
+
+    }
+    li{
+        float:$li-float;
+    }
+    li a{
+        display:block;
+        color:white;
+        text-align: center;
+        padding:14px 16px;
+        text-decoration:none;
+    }
+
+    li a:hover{
+        background-color:$background-color-hover;
+    }
+}
+.div2{
+    @include div2-navbar(left,#333,#111)
+}
+.div3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    grid-auto-rows:minmax(100px,auto);
+    background-color: bisque;
+
+   
+}
+
+@media (max-width:"797px")
+{
+    .div3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    grid-auto-rows:minmax(100px,auto);
+    background-color: lightgreen;
+
+   
+}
+}
+
+
+
+
+
+
+
