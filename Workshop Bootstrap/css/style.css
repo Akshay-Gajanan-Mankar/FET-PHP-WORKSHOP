@@ -1,0 +1,18 @@
+.en-markup-crop-options {
+    top: 18px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    border: 2px hsla(0, 64%, 63%, 0.38) solid;
+    border-radius: 4px;
+}
+
+.grey {
+  background: #E6E6E6;
+}
+
+#footer {
+    text-align: center;
+    height: 100px;
+    background: #eee;
+}
